@@ -1,0 +1,36 @@
+User:
+	id, username, password, type (customer / manager)
+	firstName, lastName, email, city, street, phone
+
+Product:
+	name
+	price
+	availableItems
+
+Order:
+	Map<productName, quantity>
+	total
+	userId
+	status: new, waiting (for delivery), delivered
+
+customer can
+	register
+	createOrder
+	cancelOrder(orderId)
+	getAllProducts
+	addProductsToOrder(orderId, productId, quantity)
+	removeProductFromOrder(orderId, productId, quantity - optional: os not exist then remove all)
+	sendOrder - will validate that all product exist and send it
+
+managers can
+	products - ALL CRUD operations
+	getAllOrders
+	deliverOrder
+
+-------------------
+api
+user-service
+product-service
+order-service
+customer-service
+manager-service
