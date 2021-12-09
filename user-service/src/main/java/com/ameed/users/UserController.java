@@ -23,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping("/{userId}")
-    public User getUser(@PathVariable String userId){
+    public User getUser(@PathVariable String userId) {
         return userRepository.findById(userId).orElse(null);
     }
 }
