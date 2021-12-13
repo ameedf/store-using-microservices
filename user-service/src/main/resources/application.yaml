@@ -1,4 +1,14 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    shutdown:
+      enabled: true
 spring:
-  data:
-    mongodb:
-      database: store
+  config:
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: user-service
+

@@ -1,6 +1,7 @@
-spring:
-  data:
-    mongodb:
-      database: store
 server:
   port: 8081
+
+spring:
+  config:
+    import: file:D:\\tmp\\store-config\\store.yaml
+
