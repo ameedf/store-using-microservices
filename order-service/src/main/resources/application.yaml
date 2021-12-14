@@ -3,5 +3,6 @@ server:
 
 spring:
   config:
-    import: file:D:\\tmp\\store-config\\store.yaml
-
+    import: optional:configserver:http://localhost:8888
+  application:
+    name: order-service
