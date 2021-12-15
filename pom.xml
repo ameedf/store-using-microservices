@@ -13,9 +13,9 @@
 	<artifactId>store</artifactId>
 	<version>1.0</version>
 	<modules>
-		<module>api</module>
-		<module>user-service</module>
-		<module>order-service</module>
+		<module>domain</module>
+		<module>services</module>
+		<module>management</module>
 	</modules>
 	<packaging>pom</packaging>
 
