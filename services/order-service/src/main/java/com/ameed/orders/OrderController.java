@@ -22,4 +22,6 @@ public class OrderController {
     public Order createOrder(@RequestBody Order newOrder) {
         return orderService.createOrder(newOrder);
     }
+
+    // PUT /orders  (order with products)
 }
